@@ -10,3 +10,9 @@ Debian package dependencies:
 - fd-find (for telescope)
 - ripgrep (for telescope)
 - tree-sitter-cli (for treesitter)
+- xclip and wl-clipboard (to use the clipboard in X and wayland).
+
+## NerdFonts
+
+https://wiki.debian.org/Fonts/NerdFonts
+
