@@ -1,16 +1,25 @@
 return {
     "neovim/nvim-lspconfig",
     dependencies = {
+        -- formatter & LSP improvements
         "stevearc/conform.nvim",
+        -- mason is used for linting
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
-        "hrsh7th/cmp-nvim-lsp",
-        "hrsh7th/cmp-buffer",
-        "hrsh7th/cmp-path",
-        "hrsh7th/cmp-cmdline",
+        -- autocompletiong plugin
         "hrsh7th/nvim-cmp",
+        -- nvim-cmp source for LSP autocompletion
+        "hrsh7th/cmp-nvim-lsp",
+        -- nvim-cmp source for nvim cmdline
+        "hrsh7th/cmp-cmdline",
+        -- nvim-cmp source for filesystem paths
+        "hrsh7th/cmp-path",
+        -- nvim-cmp source for buffer words
+        "hrsh7th/cmp-buffer",
+        -- nvim-cmp dependencies
         "L3MON4D3/LuaSnip",
         "saadparwaiz1/cmp_luasnip",
+        -- Notifications and LSP progress messages
         "j-hui/fidget.nvim",
     },
 
@@ -31,6 +40,8 @@ return {
         require("mason").setup()
         require("mason-lspconfig").setup({
             ensure_installed = {
+                -- Available:
+                -- https://github.com/williamboman/mason-lspconfig.nvim?tab=readme-ov-file#default-configuration
                 "lua_ls",
                 "gopls",
             },
@@ -55,8 +66,8 @@ return {
                     })
                     vim.g.zig_fmt_parse_errors = 0
                     vim.g.zig_fmt_autosave = 0
-
                 end,
+
                 ["lua_ls"] = function()
                     local lspconfig = require("lspconfig")
                     lspconfig.lua_ls.setup {

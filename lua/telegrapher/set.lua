@@ -1,6 +1,7 @@
 vim.opt.guicursor = ""
 
-vim.opt.nu = true
+-- hybrid line numbers
+vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.tabstop = 4
@@ -22,7 +23,7 @@ vim.opt.hlsearch = false
 -- Incremental search
 vim.opt.incsearch = true
 
--- Enable 4bit color
+-- Enable 24bit color
 vim.opt.termguicolors = true
 -- Enable column at 110 chars
 vim.opt.colorcolumn = "110"
@@ -33,3 +34,5 @@ vim.opt.isfname:append("@-@")
 
 -- vim.opt.updatetime = 50
 
+-- Set the statusline to always visible
+vim.opt.laststatus = 2

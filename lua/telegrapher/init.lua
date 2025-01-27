@@ -1,3 +1,4 @@
+require("telegrapher.set")
 require("telegrapher.remap")
 require("telegrapher.lazy_init")
 
