@@ -43,7 +43,7 @@ autocmd({"BufWritePre"}, {
 
 
 -- Change colorscheme based on filetype
-autocmd('BufEnter', {
+--[[autocmd('BufEnter', {
     group = TelegrapherGroup,
     callback = function()
         if vim.bo.filetype == "zig" then
@@ -52,7 +52,7 @@ autocmd('BufEnter', {
             vim.cmd.colorscheme("rose-pine-moon")
         end
     end
-})
+})]]
 
 
 autocmd('LspAttach', {
@@ -79,3 +79,5 @@ autocmd('LspAttach', {
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
+
+vim.cmd.colorscheme("gruvbox")

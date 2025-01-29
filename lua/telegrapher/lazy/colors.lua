@@ -1,6 +1,7 @@
 function ColorMyPencils(color)
     --color = color or "rose-pine-moon"
-    color = color or "wombat256mod"
+    -- color = color or "wombat256mod"
+    color = color or "gruvbox"
     vim.cmd.colorscheme(color)
 
     vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -20,7 +21,7 @@ return {
     },
     {
         "ellisonleao/gruvbox.nvim",
-        name = "gruvbox",
+        --[[name = "gruvbox",
         config = function()
             require("gruvbox").setup({
                 terminal_colors = true, -- add neovim terminal colors
@@ -46,7 +47,7 @@ return {
                 dim_inactive = false,
                 transparent_mode = false,
             })
-        end,
+        end,]]
     },
     {
         "folke/tokyonight.nvim",

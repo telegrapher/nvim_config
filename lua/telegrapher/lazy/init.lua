@@ -13,6 +13,11 @@ return {
         },
         init = function()
             vim.g.airline_theme = 'wombat' -- Set the theme to wombat256
+            --vim.g.airline_theme = 'gruvbox'
         end,
+    },
+    {
+        "christoomey/vim-tmux-navigator",
+        lazy=false,
     },
 }
