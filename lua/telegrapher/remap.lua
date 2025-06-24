@@ -24,6 +24,12 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 -- Copy entire line to the system clipboard
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+-- Clipboard not working well in mac until I added this
+if vim.fn.has("unnamedplus") == 1 then
+  vim.opt.clipboard = "unnamedplus"
+else
+  vim.opt.clipboard = "unnamed"
+end
 
 -- Delete without overwriting the unnamed register
 vim.keymap.set({"n", "v"}, "<leader>d", "\"_d")
@@ -78,3 +84,5 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+
