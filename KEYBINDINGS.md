@@ -2,6 +2,12 @@
 
 Leader key: `<Space>`
 
+## Commands
+
+| Command | Action |
+|---------|--------|
+| `:checkhealth` | Run health checks for nvim and plugins |
+
 ## General
 
 | Key | Mode | Action |
@@ -59,6 +65,13 @@ Leader key: `<Space>`
 | `<leader>ea` | Normal | Insert `assert.NoError(err, "")` |
 | `<leader>ef` | Normal | Insert `if err != nil { log.Fatalf(...) }` |
 | `<leader>el` | Normal | Insert `if err != nil { logger.Error(...) }` |
+
+## Vim Motions / Yanking
+
+| Key | Mode | Action |
+|-----|------|--------|
+| `yap` | Normal | Yank a paragraph (current paragraph + surrounding blank lines) |
+| `yG` | Normal | Yank from cursor to end of file |
 
 ## Plugins
 
