@@ -1,0 +1,32 @@
+
+
+To review later:
+
+Tree view of symbols: https://github.com/simrat39/symbols-outline.nvim
+
+Integrated debugger:
+- https://github.com/mfussenegger/nvim-dap
+- https://github.com/leoluz/nvim-dap-go
+- https://github.com/rcarriga/nvim-dap-ui
+
+
+Tmux: https://github.com/edkolev/tmuxline.vim
+
+Go:
+
+https://github.com/fatih/vim-go
+List of plugins: https://www.reddit.com/r/neovim/comments/1b9jbrf/need_help_to_set_up_neovim_set_up_for_golang/
+
+ray-x plugins mentioned:
+https://www.reddit.com/r/golang/comments/rx0xav/anyone_write_go_full_time_using_vim/
+
+https://github.com/ray-x/go.nvim
+
+
+Neovim awesome
+https://github.com/rockerBOO/awesome-neovim?tab=readme-ov-file#golang
+
+Tmux
+https://github.com/dominikduda/tmux_mode_indicator
+set -g status-right "#{tmux_mode_indicator}"
+
